@@ -1,12 +1,12 @@
-// components/ui/EventForm.tsx
 
-"use client"; // Mark as a client component to use state
+
+"use client"; 
 
 import { useState } from "react";
 import Button from "./Button";
 import Input from "./Input";
 import Label from "./Label";
-import './EventForm.css'; // Import the CSS file
+import './EventForm.css'; 
 
 const EventForm = () => {
   const [formData, setFormData] = useState({
@@ -46,7 +46,7 @@ const EventForm = () => {
 
       const result = await response.json();
       console.log("Event created successfully:", result);
-      // Clear form or provide feedback to user
+      
       setFormData({
         uid: "",
         name: "",
